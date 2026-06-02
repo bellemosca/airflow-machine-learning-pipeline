@@ -49,7 +49,9 @@ uv run python configurar_usuario.py
 uv run airflow standalone
 ```
 
-4. Acesse `http://localhost:8080` no navegador, faça o login e execute a DAG `ml_pipeline`.
+4. Acesse `http://localhost:8080` no navegador, faça o login e execute a DAG `ml_pipeline` clicando no botão "Trigger" (Play).
+
+*Atenção:* Certifique-se de rodar os comandos acima na mesma aba do terminal. Se você abrir um novo terminal para rodar o `airflow standalone` sem exportar as variáveis de ambiente novamente (Passo 1), o Airflow iniciará na pasta padrão do sistema (`~/airflow`), fazendo com que o login falhe.
 
 ## O que este projeto realmente faz?
 
